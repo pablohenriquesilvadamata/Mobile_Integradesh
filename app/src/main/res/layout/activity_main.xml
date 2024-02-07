@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".MainActivity"
+>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/constraintLayout"
+            android:background="#FFFFFF">
+        <ImageView
+                android:layout_width="178dp"
+                android:layout_height="168dp"
+                tools:src="@drawable/captura_de_tela_2024_02_01_212114"
+                android:id="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="80dp"
+                android:contentDescription="@string/todo"/>
+        <EditText
+                android:layout_width="301dp"
+                android:layout_height="53dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/campo_email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titulo_email"
+                android:hint="@string/exemplo_email_com" android:autofillHints="" android:textColorHint="#757575"/>
+        <EditText
+                android:layout_width="301dp"
+                android:layout_height="53dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/campo_senha"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titulo_senha" android:hint="@string/Senha" android:autofillHints=""/>
+        <TextView
+                android:text="@string/e_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/titulo_email"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.187"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                android:layout_marginTop="88dp"/>
+        <TextView
+                android:text="@string/senha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/titulo_senha"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.179"
+                app:layout_constraintTop_toBottomOf="@+id/campo_email"
+                android:layout_marginTop="68dp"/>
+        <Button
+                android:text="@string/entrar"
+                android:textAllCaps="true"
+                android:layout_width="252dp"
+                android:layout_height="48dp"
+                android:id="@+id/btn_entrar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:backgroundTint="#0A2E4A"
+                app:layout_constraintTop_toBottomOf="@+id/campo_senha"
+                android:layout_marginTop="68dp" android:textColor="#FFFFFF"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
